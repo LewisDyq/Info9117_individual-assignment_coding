@@ -5,12 +5,12 @@ from flask import Flask, request, session, g, redirect, url_for, \
 
 os.environ['FLASK_APP'] = 'flaskr' # to avoid error msg
 app = Flask(__name__)
-os.chdir('E:\\INFO9117\\flaskr')
-conn = sqlite3.connect(r'./flaskr.db')
-db = conn.cursor()
-sql = '''select * from users'''
-results = db.execute(sql)
-all_users = results.fetchall()
+# os.chdir('E:\\INFO9117\\flaskr')
+# conn = sqlite3.connect(r'./flaskr.db')
+# db = conn.cursor()
+# sql = '''select * from users'''
+# results = db.execute(sql)
+# all_users = results.fetchall()
 
 app.config.update(dict(
     DATEBASE=os.path.join(app.root_path,'flaskr.db'),
